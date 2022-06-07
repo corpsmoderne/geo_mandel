@@ -10,11 +10,28 @@
     <style>
       body { margin: 0; padding: 0; }
       #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+      .github-btn {
+	  position: absolute;
+	  top: 5px;
+	  right: 5px;
+	  z-index: 2000;
+	  width: 32px;
+	  opacity: 50%;
+      }
+      .github-btn:hover { opacity: 100%; }
+      .github-btn img {
+	  width: 100%;
+      }
     </style>
   </head>
   <body>
     <img src="/api/0/0/0" style="display: none;">
     <div id="map"></div>
+    <a href="https://github.com/corpsmoderne/geo_mandel/"
+       target="_blank"
+       class="github-btn">
+      <img src="GitHub-Mark-Light-64px.png"/>
+    </a>
     <script>
 
       var map = L.map('map').setView([0, 0], 2)
