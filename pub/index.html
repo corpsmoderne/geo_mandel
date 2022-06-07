@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mandelbrot Map</title>
+    <meta name="viewport"
+          content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link href="leaflet/leaflet.css" rel="stylesheet">
+    <script src="leaflet/leaflet.js"></script>
+    <style>
+      body { margin: 0; padding: 0; }
+      #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+  </head>
+  <body>
+    <img src="/api/0/0/0" style="display: none;">
+    <div id="map"></div>
+    <script>
+
+      var map = L.map('map').setView([0, 0], 2)
+      
+      L.tileLayer('/api/{z}/{x}/{y}', {}).addTo(map)
+
+    </script>
+    
+  </body>
+</html>

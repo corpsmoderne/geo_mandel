@@ -1,0 +1,12 @@
+[package]
+name = "geo_mandel"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rouille = "3.5.0"
+image = "0.24.2"
+log = "0.4.17"
+simple_logger = "2.1.0"
